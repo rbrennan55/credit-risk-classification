@@ -1,8 +1,22 @@
 ## credit-risk-classification
 
 ## Overview:
+Various techniques were used to train and evaluate a model based on loan risk. A dataset of historical lending activity from a peer-to-peer lending services company was used to build a model that can identify the creditworthiness of borrowers.
 
-## The results: 
-- Using a bulleted list, describe the accuracy score, the precision score, and recall score of the machine learning model.
+## Results: 
+- The Logistic Regression Model with Original Data
 
-## Summary: Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning.
+![alt text](images/logical_regression_model.PNG)
+<br />
+The Logistic Regression model predicted well healthy loans with 100% precision and recall. It does less well at isolating high-risk loans with precision of 87% and 89% recall.
+<br />
+<br />
+- The Logistic Regression Model with Over Sampling Data
+ 
+![alt text](images/random_oversampling_model.PNG)
+<br />
+The logistic regression model predicts the oversampled data with precision and recall of 99%.  It does well!  It did better than the original data model.
+
+## Summary: 
+
+With the use of random oversampling of the original data, the higher the balanced accuracy and recall scores are. With higher percision and recall score, the model can predict risky loans vs. healthy loans more percisely.
