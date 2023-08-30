@@ -1,31 +1,29 @@
-# Module 12 Report Template
+# Module 20 Report Template
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+- Various techniques were used to train and evaluate a model based on loan risk. A dataset of historical lending activity from a peer-to-peer lending services company was used to build a model that can identify the creditworthiness of borrowers.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+- The analysis that was used for the y-test was the "loan status" indicating if a loan is healthy or at risk.  The X-test used the remainder of the data (loan size, interest rate, borrower income, debt to income ratio, number of accounts and derogatory marks).
+
+- 2 diffeent Logistic Regression models were used.  The first was with the original data set and the second was a random over resampled data set of the original data to balance out the data(0 - 75036/1 - 75036 vs. 0 - 75036/1 - 2500)
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+- The Logistic Regression Model with Original Data
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+![alt text](images/logical_regression_model.PNG)
+<br />
+The Logistic Regression model predicted well healthy loans with 100% precision and recall. It does less well at isolating high-risk loans with precision of 87% and 89% recall.
+<br />
+<br />
+- The Logistic Regression Model with Over Sampling Data
+ 
+![alt text](images/random_oversampling_model.PNG)
+<br />
+The logistic regression model predicts the oversampled data with precision and recall of 99%.  It does well!  It did better than the original data model.
 
-
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+- With the use of random oversampling of the original data, the higher the balanced accuracy and recall scores are. With higher percision and recall score, the model can predict risky loans vs. healthy loans more percisely.  The more balance the data is the more accurate the predictions are.
