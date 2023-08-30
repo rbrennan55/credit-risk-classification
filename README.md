@@ -18,3 +18,5 @@ The Logistic Regression model predicted well healthy loans with 100% precision a
 The logistic regression model predicts the oversampled data with precision and recall of 99%.  It does well!  It did better than the original data model.
 
 ## Summary: 
+
+With the use of random oversampling of the original data, the higher the balanced accuracy and recall scores are. With higher percision and recall score, the model can predict risky loans vs. healthy loans more percisely.
