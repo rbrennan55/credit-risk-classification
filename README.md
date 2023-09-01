@@ -1,4 +1,4 @@
-# Credit Risk Classification
+# Module 20 - Credit Risk Classification
 
 ## Background
 
@@ -22,7 +22,7 @@ This homework consists of the following subsections:
 
 * Predict a Logistic Regression Model with Resampled Training Data
 
-* Write a Credit Risk Analysis Report --> [Credit Risk Analysis Report](https://github.com/rbrennan55/credit-risk-classification/blob/main/Credit-Risk-Classification%20Report.md))
+* Write a Credit Risk Analysis Report [Credit Risk Analysis Report](https://github.com/rbrennan55/credit-risk-classification/blob/main/Credit-Risk-Classification%20Report.md))
 
 ### Split the Data into Training and Testing Sets
 
